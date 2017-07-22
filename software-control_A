@@ -164,7 +164,7 @@ class code_structure:
 
 
     
-file1 = code_structure('./structure_v1.py')
+file1 = code_structure('./software_control_A.py')
 print(file1.count_lines())
 file1.count_single_comment_lines()
 file1.sparse_comment_matrix()
