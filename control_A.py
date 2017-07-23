@@ -10,7 +10,7 @@ class code_structure:
         self.count_comment = 0
         self.count_left_comment = 0
         f.close()
-    
+        
     def count_lines(self):
         """count lines.
         ---------------------------------
@@ -20,7 +20,7 @@ class code_structure:
         return count
     
     def sparse_comment_matrix(self, comment_sign = None):
-        """sparse_comment_matrix. 
+        """sparse_comment_matrix.
         ---------------------------------------------------------------------------------------------
         Creates a sparse matix with the location of all the comment signs.
         """
@@ -73,7 +73,7 @@ class code_structure:
         Count the total single comment lines in a file.
         Searches each line in the file for the #-sign
         Separates between the #-sign at the beginning of the line, i.e. the total line is a comment.
-        And a #-sign in the middle of the line, i.e. a part of the line is commented. 
+        And a #-sign in the middle of the line, i.e. a part of the line is commented.
         """
         import re
         comment_sign = "#"
