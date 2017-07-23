@@ -41,15 +41,7 @@ class code_structure:
                     comment_array.append([x,y])
     
         print(comment_array)
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     def count_multi_comment_lines(self, comment_sign = None):
         """count multi comment lines. 
         ---------------------------------------------------------------------------------------------
