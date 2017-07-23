@@ -1,5 +1,4 @@
 class code_structure:
-    
     def __init__(self, filepath):
         f = open(filepath, 'r')
         filecontent = f.read()
@@ -13,7 +12,7 @@ class code_structure:
         f.close()
     
     def count_lines(self):
-        """count lines. 
+        """count lines.
         ---------------------------------
         Count the total lines in a file.
         """
@@ -23,7 +22,7 @@ class code_structure:
     def sparse_comment_matrix(self, comment_sign = None):
         """sparse_comment_matrix. 
         ---------------------------------------------------------------------------------------------
-        Creates a sparse matix with the location of all the comment signs. 
+        Creates a sparse matix with the location of all the comment signs.
         """
         import re
         comment_sign = "[\"'#]"
@@ -43,12 +42,12 @@ class code_structure:
         print(comment_array)
         
     def count_multi_comment_lines(self, comment_sign = None):
-        """count multi comment lines. 
+        """count multi comment lines.
         ---------------------------------------------------------------------------------------------
         Count the total multi comment lines in a file.
         Searches each line in the file for the \'\'\' or \"\"\"-sign
         Separates between the \'\'\' or \"\"\"-sign at the beginning of the line, i.e. the total line is a comment.
-        And a \'\'\' or \"\"\"-sign in the middle of the line, i.e. a part of the line is commented. 
+        And a \'\'\' or \"\"\"-sign in the middle of the line, i.e. a part of the line is commented.
         """
         import re
         comment_sign = "\'\'\'|\"\"\""
@@ -69,7 +68,7 @@ class code_structure:
     
     
     def count_single_comment_lines(self, comment_sign = None):
-        """count single comment lines. 
+        """count single comment lines.
         ---------------------------------------------------------------------------------------------
         Count the total single comment lines in a file.
         Searches each line in the file for the #-sign
@@ -94,12 +93,12 @@ class code_structure:
                 self.count_left_single_comment +=1
                 
     def count_comment_lines(self, comment_sign = None):
-        """count comment lines. 
+        """count comment lines.
         ---------------------------------------------------------------------------------------------
         Count the total comment lines in a file.
         Searches each line in the file for the \'\'\' or \"\"\" or the #-sign
         Separates between the \'\'\' or \"\"\" or #-sign at the beginning of the line, i.e. the total line is a comment.
-        And a \'\'\' or \"\"\" or #-sign in the middle of the line, i.e. a part of the line is commented. 
+        And a \'\'\' or \"\"\" or #-sign in the middle of the line, i.e. a part of the line is commented.
         """
         import re
         comment_sign = "\'\'\'|\"\"\"|#"
