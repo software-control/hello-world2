@@ -1,5 +1,3 @@
-  #test
-#test2
 class code_structure:
     
     def __init__(self, filepath):
@@ -152,18 +150,7 @@ class code_structure:
             
             if n != None and multilinebool == 0:
                 self.count_left_comment +=1
-
-　
-　
-　
-　
-　
-　
-　
-　
-　
-　
-    
+                
 file1 = code_structure('./control_A.py')
 print(file1.count_lines())
 file1.count_single_comment_lines()
